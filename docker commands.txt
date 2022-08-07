@@ -1,0 +1,43 @@
+docker run -dit --name web -p 8080:80 641269997026.dkr.ecr.ap-south-1.amazonaws.com/farook:httpd
+
+FROM centos:7
+MAINTAINER "farook243@gmail.com"
+WORKDIR /go/src/project
+LABEL environment="development"
+#RUN yum install docker
+COPY version /version
+EXPOSE 8080 80
+#CMD ["apache2","-DFOREGROUND"]
+#ENTRYPOINT ["/opt/app"]
+
+
+
+AWS concepts need to learn 
+
+EC2 INSTANCE
+
+S3 
+
+VPC
+
+SUBNET
+
+SECURITY GROUP
+
+EBS 
+
+LOAD BALANCER ------ it wil manage the  user requests( manage the loads from user when they are making request for any products from filipkart ,if they provide some special offer on particular time and date) 
+
+AUTO SCALE --- it will scale the size of the server ,like offer given by the flipkart ,when the load is getting heavy then it will create new servers to handle those requets)
+
+LAMBDA 
+
+ELASTIC IP 
+
+IAM
+
+
+
+
+
+
